@@ -1,0 +1,28 @@
+package BreakOutActivity;
+import java.util.Scanner;
+public class AramstrongNumber {
+public static void main (String args[]) {
+	//to check number is armstron or not
+	int mul = 0;
+	Scanner scan = new Scanner(System.in);
+	System.out.println("Enter the Number to check Amstrong Value:");
+	
+	int number = scan.nextInt();
+	int temp = number;//1634
+	while(number > 0)//1634>0
+	{
+		int rem = number % 10 ;//1634%10
+		//reverse = number * 10;
+		mul += (rem * rem* rem);
+		number = number /10; //163 	
+	}
+	if(temp == mul)
+	{
+		System.out.println("The entered number "+temp+" is a Amstrong Number");
+	}
+	else
+	{
+		System.out.println("The entered number "+temp+" is not an Amstrong Number");	
+	}
+}
+}
