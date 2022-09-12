@@ -1,0 +1,28 @@
+package BreakOutActivity;
+import java.util.Scanner;
+public class NeonNumber {
+
+	public static void main(String[] args) {
+		// TO check given number is neon or not
+		Scanner obj = new Scanner(System.in);
+		System.out.println("Enter the number you want to check");
+		int number =obj.nextInt();
+		System.out.println("Entered number is : " + number);
+		int square = number*number;
+		System.out.println("Square of " + number + " is : " + square);
+		int sum = 0 , rem =0 ;
+		for(;square!=0;) {
+			rem = square %10;
+			sum +=rem;
+			square /=10;
+			}
+			if(sum==number) {
+				System.out.println("Enter the number " + number + " is a neon number");
+			}
+			else {
+				System.out.println("Enter the number " + number + " is not a neon number");
+			}
+		}
+		
+		
+	}
