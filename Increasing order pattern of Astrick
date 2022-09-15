@@ -1,0 +1,23 @@
+package BreakOutActivity;
+import java.util.Scanner;
+public class IncreasingPattern {
+
+	public static void main(String[] args) {
+		// To Print a patter of astrick
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int rows = obj.nextInt();
+		//Scanner obj=new Scanner(System.in);
+		//System.out.println("Enter the number of col : ");
+		//int cols = obj.nextInt();
+		for(int ctr = 0; ctr <rows; ctr++) {//1 2
+			for(int ctr1= 0; ctr1<ctr+1 ; ctr1++) {//1 2
+				System.out.print("*");
+				//System.out.println();
+				
+			}
+			System.out.println();
+		}
+	}
+
+}
