@@ -1,0 +1,22 @@
+package BreakOutActivity;
+
+import java.util.Scanner;
+
+public class decreasingPattern {
+
+	public static void main(String[] args) {
+		// To print decreasing pattern of astrick
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the number of rows : ");
+		int rows = obj.nextInt();
+				for(int ctr = rows-1; ctr >=0; ctr--) {//1 2
+			for(int ctr1= 0; ctr1<=ctr ; ctr1++) {//1 2
+				System.out.print("*");
+								
+			}
+			System.out.println();
+		}
+
+	}
+
+}
